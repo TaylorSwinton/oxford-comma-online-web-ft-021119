@@ -4,6 +4,8 @@ def oxford_comma(array)
     elsif array.length == 2
       array.join(" and ")
     elsif array.length == 3
-      array.each.join {|fruit| puts "#{fruit}, #{fruit}, and #{fruit}"}
+      newArray = Array.new
+      array.each do |fruit| 
+        newArray.join ("#{fruit}, #{fruit}, and #{fruit}")
     end
 end
