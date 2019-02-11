@@ -7,5 +7,6 @@ def oxford_comma(array)
       newArray = Array.new
       array.each do |fruit|
         newArray.join ("#{fruit}, #{fruit}, and #{fruit}")
+      end
     end
 end
